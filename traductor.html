@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html ng-app="appdeimi">
+<head>
+   <script src="js/angular.min.js"></script>
+   <script src="js/operatraductor.js"></script>
+
+   <!-- <link rel="stylesheet" type="text/css" href="css/estilos.css"> -->
+    <title>traductor</title>
+</head>
+<body>
+
+    <div ng-controller="controlador">
+
+        <input type="text" id="texto-cargar" ng-model="texto" ng-change="cargar_datos()"><hr>
+        <!-- <input type="text" ng-model="inicio">
+        <input type="text" ng-model="final"> -->
+
+        <!-- <a href="#" ng-click="cargar_datos()">Click</a> -->
+
+        <div ng-repeat="datos in informacion" ng-class="texto ? 'clase': 'clase2'">
+            {{datos.texto}}
+            
+        </div>
+        
+
+    </div>
+    
+</body>
+</html>

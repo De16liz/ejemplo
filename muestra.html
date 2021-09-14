@@ -1,0 +1,37 @@
+<!DOCTYPE html><!--opcional-->
+<html ng-app="appdeimi">
+<head>
+
+    <title>Prueba</title>
+    
+    <link rel="stylesheet" type="text/css" href="css/estilos.css">
+
+    <script src="js/angular.min.js"></script>
+    
+</head>
+<body>
+
+    <div ng-controller="controlador">
+
+        <!--impresion de un if-->
+        <input type="text" ng-model="dato">
+
+        <!-- <div ng-if="dato == 1" >
+           Prueba 1
+       </div > -->
+
+       <div ng-class=" dato == 1 ? 'clase': 'clase2' ">
+
+            <!--impresion de una decicion-->
+            {{ dato.nombre}}
+
+       </div>
+       
+ 
+
+    </div>
+
+    <script src="js/muestra.js"></script>
+    
+</body>
+</html>
